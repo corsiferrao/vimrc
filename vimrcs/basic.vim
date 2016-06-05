@@ -141,10 +141,10 @@ set foldcolumn=1
 " Enable syntax highlighting
 syntax enable 
 
-try
-    colorscheme desert
-catch
-endtry
+"try
+    colorscheme molokai 
+"catch
+"endtry
 
 set background=dark
 
@@ -423,3 +423,9 @@ endfunction
 " if has("autocmd")
 "   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => clipboard
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" system clipboard is the same on vim
+set clipboard=unnamed
